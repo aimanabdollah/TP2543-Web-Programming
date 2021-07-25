@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      .bg-1 {
+        background-color: #1d3557; /* Orange */
+        color: #ffffff;
+      }
+      .bg-2 {
+        background-color: #a8dadc; /* Dark Blue */
+        color: black;
+      }
+      .bg-3 {
+        background-color: #457b9d; /* White */
+        color: black;
+      }
+      .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      body {
+        font: 14px "Montserrat", sans-serif;
+        line-height: 1.8;
+      }
+      .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 14px;
+        letter-spacing: 3px;
+      }
+      .bg-4 {
+        background-color: #2f2f2f;
+        color: #ffffff;
+      }
+      footer .glyphicon {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #f4511e;
+      }
+    </style>
+  </head>
+  <body id="myPage">
+    <nav class="navbar navbar-default" style="background-color: #a8dadc">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><b>Me</b></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#hello"><b>Hello</b></a>
+            </li>
+            <li>
+              <a href="#who"><b>Who</b></a>
+            </li>
+            <li>
+              <a href="#where"><b>Where</b></a>
+            </li>
+            <li>
+              <a href="#contact"><b>Contact</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-1 text-center" id="hello">
+      <h3><b>Hello!</b></h3>
+      <img src="pictures/profile-photo.jpg" class="img-circle" alt="Myself" />
+      <h3><b>I'm Muhammad Aiman Abdollah</b></h3>
+    </div>
+
+    <div class="container-fluid bg-2 text-center" id="who">
+      <h3><b>Who Am I?</b></h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>
+            <b>
+              A second year student of Software Engineering (Information System
+              Development) in UKM
+            </b>
+          </p>
+          <img
+            src="pictures/student.png"
+            class="img-responsive"
+            alt="Image"
+            style="display: inline"
+          />
+        </div>
+        <div class="col-sm-4">
+          <p>
+            <b>
+              Currently, I am studying TP2543 Web Programming course to learn
+              the fundamental of web development using XAMPP stack</b
+            >
+          </p>
+          <img
+            src="pictures/web.png"
+            class="img-responsive"
+            alt="Image"
+            style="display: inline"
+          />
+        </div>
+        <div class="col-sm-4">
+          <p>
+            <b>
+              I also one of the member in Mobile Application Development Club
+              for SIG in my faculty
+            </b>
+          </p>
+          <img
+            src="pictures/mobile.png"
+            class="img-responsive"
+            alt="Image"
+            style="display: inline"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-3 text-center" id="where">
+      <h3><b>Where To Find Me?</b></h3>
+      <p>Find me on my contact stated below or drop a message in my form.</p>
+      <a href="#" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </a>
+    </div>
+
+    <div class="container-fluid" style="background-color: #a8dadc" id="contact">
+      <h3 class="text-center"><b>Contact Me</b></h3>
+      <div class="row">
+        <div class="col-sm-5">
+          <p><b>Contact me and I'll get back to you within 24 hours</b></p>
+          <p>
+            <span class="glyphicon glyphicon-map-marker"></span> Kuantan, Pahang
+          </p>
+          <p><span class="glyphicon glyphicon-phone"></span> +6011-25560093</p>
+          <p>
+            <span class="glyphicon glyphicon-envelope"></span>
+            a175054@siswa.ukm.edu.my
+          </p>
+        </div>
+        <div class="col-sm-7">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Name"
+                type="text"
+                required
+              />
+            </div>
+            <div class="col-sm-6 form-group">
+              <input
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email"
+                type="email"
+                required
+              />
+            </div>
+          </div>
+          <textarea
+            class="form-control"
+            id="comments"
+            name="comments"
+            placeholder="Comment"
+            rows="5"
+          ></textarea
+          ><br />
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="container-fluid bg4 text-center"
+      style="background-color: #1d3557"
+    >
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p style="color: #ffffff">
+        <b>Copyright © Aiman Abdollah Website 2021</b>
+      </p>
+    </footer>
+  </body>
+</html>
